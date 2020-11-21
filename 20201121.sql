@@ -50,7 +50,8 @@ The Department table holds all departments of the company.
 | 1  | IT       |
 | 2  | Sales    |
 +----+----------+
-Write a SQL query to find employees who have the highest salary in each of the departments. For the above tables, your SQL query should return the following rows (order of rows does not matter).
+Write a SQL query to find employees who have the highest salary in each of the departments. 
+For the above tables, your SQL query should return the following rows (order of rows does not matter).
 
 +------------+----------+--------+
 | Department | Employee | Salary |
@@ -77,7 +78,8 @@ on TMP1.DepartmentId = department.id
 where tmp1.salary = tmp1.maximum and department.Name is not null
 
 /* 262. Trips and Users
-The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign keys to the Users_Id at the Users table. Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).
+The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign keys to the Users_Id at the Users table. 
+Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).
 
 +----+-----------+-----------+---------+--------------------+----------+
 | Id | Client_Id | Driver_Id | City_Id |        Status      |Request_at|
